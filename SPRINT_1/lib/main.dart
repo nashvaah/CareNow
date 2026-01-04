@@ -40,7 +40,7 @@ class _AppView extends StatelessWidget {
     return MaterialApp(
       title: 'CareNow',
       theme: AppTheme.lightTheme,
-      themeMode: ThemeMode.light, // Forced Light Mode as requested
+      themeMode: ThemeMode.light, 
       builder: (context, child) {
         return MediaQuery(
           data: MediaQuery.of(context).copyWith(textScaleFactor: authProvider.textScaleFactor),
@@ -55,8 +55,8 @@ class _AppView extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: const [
-        Locale('en'), // English
-        Locale('ml'), // Malayalam
+        Locale('en'), 
+        Locale('ml'), 
       ],
       debugShowCheckedModeBanner: false,
       home: Consumer<AuthProvider>(
@@ -79,3 +79,4 @@ class _AppView extends StatelessWidget {
     );
   }
 }
+
